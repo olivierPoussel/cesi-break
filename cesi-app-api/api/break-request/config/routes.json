@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/break-requests",
+      "handler": "break-request.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/break-requests/count",
+      "handler": "break-request.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/break-requests/:id",
+      "handler": "break-request.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/break-requests",
+      "handler": "break-request.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/break-requests/:id",
+      "handler": "break-request.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/break-requests/:id",
+      "handler": "break-request.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

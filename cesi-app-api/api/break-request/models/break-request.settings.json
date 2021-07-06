@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "break_requests",
+  "info": {
+    "name": "breakRequest"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "startDateTime": {
+      "type": "datetime"
+    },
+    "duree": {
+      "type": "time"
+    },
+    "user": {
+      "via": "break_requests",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "class_rooms",
+  "info": {
+    "name": "classRoom",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "users": {
+      "via": "class_room",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}
